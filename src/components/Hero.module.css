@@ -151,6 +151,22 @@
   transform: translateY(0);
 }
 
+.bottomSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s12);
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .bottomSection {
+    flex-direction: column-reverse;
+    gap: var(--s8);
+  }
+}
+
 .bioCard {
   background: rgba(25, 25, 35, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -159,6 +175,7 @@
   backdrop-filter: blur(20px);
   max-width: 500px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .bio {
@@ -172,12 +189,7 @@
   display: flex;
   gap: var(--s4);
   flex-wrap: wrap;
-}
-
-@media (max-width: 991px) {
-  .ctaRow {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .primaryBtn, .ghostBtn {
