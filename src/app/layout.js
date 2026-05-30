@@ -25,9 +25,8 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main style={{ 
-          maxWidth: '780px', 
-          margin: '0 auto', 
-          padding: 'var(--s12) var(--s6) var(--s20)'
+          width: '100%',
+          overflowX: 'hidden'
         }}>
           {children}
         </main>
