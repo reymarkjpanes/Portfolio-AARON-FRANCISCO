@@ -42,8 +42,7 @@ export default function RootLayout({ children }) {
         <SmoothScroll>
           <Navbar />
           <main style={{ 
-            width: '100%',
-            overflowX: 'hidden'
+            width: '100%'
           }}>
             {children}
           </main>
