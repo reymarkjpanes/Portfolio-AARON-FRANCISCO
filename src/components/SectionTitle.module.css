@@ -1,0 +1,20 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  margin-bottom: var(--s8);
+}
+
+.label {
+  color: var(--accent);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.rule {
+  flex: 1;
+  height: 1px;
+  background-color: var(--border);
+}
